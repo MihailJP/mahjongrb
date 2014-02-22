@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = MahjongRB::VERSION
   spec.authors       = ["MihailJP"]
   spec.email         = ["mihailjp@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Ruby library to do with Mahjong tiles}
+  spec.summary       = %q{Ruby library to do with Mahjong tiles}
   spec.homepage      = ""
   spec.license       = "MIT"
 

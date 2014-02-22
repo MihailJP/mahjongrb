@@ -1,6 +1,6 @@
 # Mahjongrb
 
-TODO: Write a gem description
+Ruby library to do with Mahjong tiles
 
 ## Installation
 
