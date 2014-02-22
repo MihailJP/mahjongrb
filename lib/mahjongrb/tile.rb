@@ -8,14 +8,14 @@ module MahjongRB
 		include Comparable
 		def to_s; '🀫'; end
 		def to_i; nil; end
-		def isSuited; false; end
-		def isCharacter; false; end
-		def isBamboo; false; end
-		def isCircle; false; end
-		def isHonor; false; end
-		def isWind; false; end
-		def isDragon; false; end
-		def isFlower; false; end
+		def suited?; false; end
+		def character?; false; end
+		def bamboo?; false; end
+		def circle?; false; end
+		def honor?; false; end
+		def wind?; false; end
+		def dragon?; false; end
+		def flower?; false; end
 		def <=>(other)
 			self.sortkey <=> other.sortkey
 		end
@@ -25,42 +25,42 @@ module MahjongRB
 
 	# Superclass for suited tiles
 	class SuitedTile < Tile
-		def isSuited; true; end
+		def suited?; true; end
 	end
 
 	# Superclass for character suit (Wanzi, Wanzu)
 	class CharacterTile < SuitedTile
-		def isCharacter; true; end
+		def character?; true; end
 	end
 
 	# Superclass for bamboo suit (Suozi, Sohzu)
 	class BambooTile < SuitedTile
-		def isBamboo; true; end
+		def bamboo?; true; end
 	end
 
 	# Superclass for ciecle suit (Tongzi, Pinzu)
 	class CircleTile < SuitedTile
-		def isCircle; true; end
+		def circle?; true; end
 	end
 
 	# Superclass for honor tiles
 	class HonorTile < Tile
-		def isHonor; true; end
+		def honor?; true; end
 	end
 
 	# Superclass for wind tiles (Fengpai, Kazehai)
 	class WindTile < HonorTile
-		def isWind; true; end
+		def wind?; true; end
 	end
 
 	# Superclass for dragon tiles (Sanyuanpai, Sangenpai)
 	class DragonTile < HonorTile
-		def isDragon; true; end
+		def dragon?; true; end
 	end
 
 	# Superclass for flower tiles
 	class FlowerTile < Tile
-		def isFlower; true; end
+		def flower?; true; end
 	end
 
 	# Wind tiles
