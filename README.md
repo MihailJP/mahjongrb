@@ -1,4 +1,4 @@
-# Mahjongrb
+# MahjongRB
 
 Ruby library to do with Mahjong tiles
 
@@ -17,6 +17,10 @@ Or install it yourself as:
     $ gem install mahjongrb
 
 ## Usage
+
+```ruby
+require 'mahjongrb'
+```
 
 TODO: Write usage instructions here
 
