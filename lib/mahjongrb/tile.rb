@@ -21,11 +21,14 @@ module MahjongRB
 		end
 		def inspect; self.to_s; end
 		def sortkey; 99; end
+		def terminal?; false; end
+		def termHonor?; self.terminal? or self.honor?; end
 	end
 
 	# Superclass for suited tiles
 	class SuitedTile < Tile
 		def suited?; true; end
+		def terminal?; self.to_i == 1 or self.to_i == 9; end
 	end
 
 	# Superclass for character suit (Wanzi, Wanzu)

@@ -145,6 +145,8 @@ Since `Tile` class includes `Comparable` module, an array of tile objects can be
 |`<=>`       |spaceship operator which compares sort keys of two tiles    |
 |`inspect`   |returns `self.to_s`                                         |
 |`sortkey`   |returns the integer sort key of `self`                      |
+|`terminal?` |`true` if `self` is a terminal tile, i.e. one or nine       |
+|`termHonor?`|returns `self.terminal? or self.honor?`                     |
 
 #### Mix-ins
 
