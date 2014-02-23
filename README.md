@@ -40,6 +40,7 @@ Tiles as objects are retrieved from methods in `MahjongRB.Tiles`.
 |`circ1` to `circ9`                    |Circle suit _(Tongzi, Pinzu)_          |
 |`plum`, `orchid`, `chrys`, `bamboo`   |Flower tiles _(Huapai, Hanapai)_       |
 |`spring`, `summer`, `autumn`, `winter`|Flower tiles _(Huapai, Hanapai)_       |
+|`flower`                              |Abstract flower tile (for special use) |
 
 #### Sequence of suited tiles
 
@@ -50,6 +51,15 @@ These methods return an array consisting of nine uniformly suited tile objects i
 |`characters`|Character suit _(Wanzi, Wanzu)_ |
 |`bamboos`   |Bamboo suit _(Suozi, Sohzu)_    |
 |`circles`   |Circle suit _(Tongzi, Pinzu)_   |
+
+... and also available:
+
+|Method      |Returns a tuple of...                  |
+|------------|---------------------------------------|
+|`winds`     |Wind tiles _(Fengpai, Kazehai)_        |
+|`dragons`   |Dragon tiles _(Sanyuanpai, Sangenpai)_ |
+|`honors`    |Honor tiles _(Zipai, Jihai)_           |
+|`flowers`   |Flower tiles _(Huapai, Hanapai)_       |
 
 #### Sorting
 

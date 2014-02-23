@@ -319,11 +319,14 @@ module MahjongRB
 		def autumn ; AutumnSeasonClass.instance; end
 		def winter ; WinterSeasonClass.instance; end
 
+		def flower ; FlowerTile.instance; end
+
 		module_function :east, :south, :west, :north, :red, :green, :white
 		module_function :char1, :char2, :char3, :char4, :char5, :char6, :char7, :char8, :char9
 		module_function :bamb1, :bamb2, :bamb3, :bamb4, :bamb5, :bamb6, :bamb7, :bamb8, :bamb9
 		module_function :circ1, :circ2, :circ3, :circ4, :circ5, :circ6, :circ7, :circ8, :circ9
 		module_function :plum, :orchid, :chrys, :bamboo, :spring, :summer, :autumn, :winter
+		module_function :flower
 
 		def characters
 			[char1, char2, char3, char4, char5, char6, char7, char8, char9]
@@ -335,5 +338,19 @@ module MahjongRB
 			[circ1, circ2, circ3, circ4, circ5, circ6, circ7, circ8, circ9]
 		end
 		module_function :characters, :bamboos, :circles
+		def winds
+			[east, south, west, north]
+		end
+		def dragons
+			[red, green, white]
+		end
+		module_function :winds, :dragons
+		def honors
+			winds + dragons
+		end
+		def flowers
+			[plum, orchid, chrys, bamboo, spring, summer, autumn, winter]
+		end
+		module_function :honors, :flowers
 	end
 end
