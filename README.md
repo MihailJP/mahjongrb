@@ -144,7 +144,7 @@ Since `Tile` class includes `Comparable` module, an array of tile objects can be
 ### Make an array of tile objects from a string
 
 ```ruby
-MahjongRB.tiles("123m456p789sPPPNN")
+MahjongRB.str2tile("123m456p789sPPPNN")
 ```
 
 #### Alphabetic notation

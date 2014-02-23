@@ -3,12 +3,12 @@ require "mahjongrb/tile"
 
 module MahjongRB
 	# String to array of tiles
-	def tiles(str)
+	def str2tile(str)
 		srcStr = str.gsub(/\s/, '') # Ignore whitespace characters
 		if /^([1-9]+[mps]|[ESWNPFC])*$/.match(srcStr) then
 			tiles = []
 			tile_tmp = []
-			str.each_char do |chr|
+			srcStr.each_char do |chr|
 				if chr >= '1' and chr <= '9' then
 					tile_tmp += [chr.to_i]
 				elsif (chr == 'm' or chr == 'p' or chr == 's') and not tile_tmp.empty? then
@@ -35,5 +35,5 @@ module MahjongRB
 			raise ArgumentError, "cannot understand argument \"#{str}\""
 		end
 	end
-	module_function :tiles
+	module_function :str2tile
 end
