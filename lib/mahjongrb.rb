@@ -36,4 +36,24 @@ module MahjongRB
 		end
 	end
 	module_function :str2tile
+
+	# Count tiles by kind
+	def countTiles(tileList)
+		result = {}
+		for tile in (Tiles.characters + Tiles.bamboos + Tiles.circles + Tiles.honors + [Tiles.flower])
+			result[tile] = 0
+		end
+		for tile in tileList
+			if Tiles.flowers.include?(tile) then
+				result[Tiles.flower] += 1
+			elsif result.include?(tile) and tile != Tiles.flower then
+				result[tile] += 1
+			else
+				raise ArgumentError, "invalid item found: #{tile}"
+			end
+		end
+		return result
+	end
+	module_function :countTiles
+
 end

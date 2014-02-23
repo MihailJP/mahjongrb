@@ -180,6 +180,19 @@ Not implemented at this moment.
 
 This method raises `ArgumentError` if the argument is invalid.
 
+### Count tiles in a sequence by kind
+
+```ruby
+MahjongRB.countTiles(MahjongRB.str2tile("1112345678999m"))
+```
+
+This method returns a hash with tile objects as keys.
+All flower tiles are put in `MahjongRB.tiles.flower` key together.
+
+#### Exception
+
+This method raises `ArgumentError` if the sequence includes an invalid tile object.
+
 ## Contributing
 
 1. Fork it
