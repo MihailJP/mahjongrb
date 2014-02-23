@@ -355,5 +355,13 @@ module MahjongRB
 			[plum, orchid, chrys, bamboo, spring, summer, autumn, winter]
 		end
 		module_function :honors, :flowers
+		def terminals
+			[char1, char9, bamb1, bamb9, circ1, circ9]
+		end
+		module_function :terminals
+		def termHonors
+			terminals + honors
+		end
+		module_function :termHonors
 	end
 end

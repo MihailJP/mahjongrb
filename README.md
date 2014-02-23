@@ -60,6 +60,8 @@ These methods return an array consisting of nine uniformly suited tile objects i
 |`dragons`   |Dragon tiles _(Sanyuanpai, Sangenpai)_ |
 |`honors`    |Honor tiles _(Zipai, Jihai)_           |
 |`flowers`   |Flower tiles _(Huapai, Hanapai)_       |
+|`terminals` |Terminals (ones and nines)             |
+|`termHonors`|Terminals and honors                   |
 
 #### Sorting
 
