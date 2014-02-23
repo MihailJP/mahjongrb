@@ -324,5 +324,16 @@ module MahjongRB
 		module_function :bamb1, :bamb2, :bamb3, :bamb4, :bamb5, :bamb6, :bamb7, :bamb8, :bamb9
 		module_function :circ1, :circ2, :circ3, :circ4, :circ5, :circ6, :circ7, :circ8, :circ9
 		module_function :plum, :orchid, :chrys, :bamboo, :spring, :summer, :autumn, :winter
+
+		def characters
+			[char1, char2, char3, char4, char5, char6, char7, char8, char9]
+		end
+		def bamboos
+			[bamb1, bamb2, bamb3, bamb4, bamb5, bamb6, bamb7, bamb8, bamb9]
+		end
+		def circles
+			[circ1, circ2, circ3, circ4, circ5, circ6, circ7, circ8, circ9]
+		end
+		module_function :characters, :bamboos, :circles
 	end
 end
